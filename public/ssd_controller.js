@@ -59,7 +59,7 @@ app.controller("ssd_controller", function($scope){
         var vec = [];
         var separator1 = "";
         for (var i = 0; i < $scope.number_of_lanes; i++) {
-           vec.push("{"+$scope.lanes[i].join(',')+"}");
+           vec.push("new bool[]{"+$scope.lanes[i].join(',')+"}");
         };
         $scope.result += vec.join(",");
         vec = [];
